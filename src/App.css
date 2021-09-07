@@ -12,7 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+body{
+  background-color: blanchedalmond;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,7 +29,27 @@
 .App-link {
   color: #61dafb;
 }
-
+h1{
+  font-size: 60px;
+}
+h3{
+  font-size: 20px;
+  margin-top: 3rem;
+}
+#emoji-input{
+  padding: 1rem;
+  width: fit-content;
+  font-size: 20px;
+  border-radius: 1rem;
+}
+#emoji-meaning{
+  /* border: 1px solid black; */
+  margin: 1rem;
+  font-weight: bold;
+  /* text-align: center; */
+  /* position: relative; */
+  font-size: 25px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

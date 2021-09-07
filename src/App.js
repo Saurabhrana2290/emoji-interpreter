@@ -8,8 +8,20 @@ var emojiDictionary = {
   "🙂": "Slightly Smiling Face",
   "😍": "Smiling Face with Heart-Eyes",
   "😝": "Squinting Face with Tongue",
+  "😉": "Winking Face",
+  "😊": "Smiling Face with Smiling Eyes",
+  "🤩": "Star-Struck",
+  "😜": "Winking Face with Tongue",
+  "🤪": "Zany Face",
+  "🤑": "Money-Mouth Face",
+  "🤗" :"Hugging Face",
   "✌": "Victory Hand",
-  "✋": "Raised Hand"
+  "✋": "Raised Hand",
+  "🤙" :"Call Me Hand",
+  "🤟" :"Love-You Gesture",
+  "🤘" :"Sign of the Horns",
+  "👍" :"Thumbs Up",
+
 };
 
 var emojisWeKnow = Object.keys(emojiDictionary);
@@ -32,9 +44,9 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>inside outtt</h1>
-      <input onChange={onChangeHandler} />
-      <div>{meaning}</div>
+      <h1>Emoji Interpreter</h1>
+      <input id="emoji-input" placeholder="Enter emoji here!" onChange={onChangeHandler} />
+      <div id="emoji-meaning" placeholder="Meaning will be shown here!">{meaning}</div>
       <h3>Emojis We Know</h3>
       {emojisWeKnow.map(function (emoji) {
         return (
